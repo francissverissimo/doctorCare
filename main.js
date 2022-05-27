@@ -1,4 +1,6 @@
 function onScroll() {
+  const navigation = document.querySelector("#navigation");
+
   if (scrollY > 10) {
     navigation.classList.add("scroll");
   } else {
@@ -13,3 +15,14 @@ function openMenu() {
 function closeMenu() {
   document.body.classList.remove("menu-expanded");
 }
+
+// ScrollReveal
+ScrollReveal({
+  origin: "top",
+  distance: "80px",
+  duration: 600,
+}).reveal(`
+  #home header, #home .content, #home .numbers,
+  #services header, #services .card,
+  #about header h4, #about header h2, #about .content p,
+  #about .content img`);
