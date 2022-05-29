@@ -1,11 +1,26 @@
+window.addEventListener("scroll", onScroll);
+
+onScroll();
+
 function onScroll() {
+  changeNavOnScroll();
+  showBackToTopButtonOnScroll();
+}
+
+function changeNavOnScroll() {
   const navigation = document.querySelector("#navigation");
 
-  if (scrollY > 10) {
-    navigation.classList.add("scroll");
-  } else {
-    navigation.classList.remove("scroll");
-  }
+  scrollY > 10
+    ? navigation.classList.add("scroll")
+    : navigation.classList.remove("scroll");
+}
+
+function showBackToTopButtonOnScroll() {
+  const backToTopButton = document.querySelector("#backToTopButton");
+
+  scrollY > 1299
+    ? backToTopButton.classList.add("show")
+    : backToTopButton.classList.remove("show");
 }
 
 function openMenu() {
