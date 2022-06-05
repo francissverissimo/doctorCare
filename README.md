@@ -21,7 +21,7 @@ Libraries
 - [Google Fonts](https://fonts.google.com/)
 - [ScrollRevel](https://scrollrevealjs.org): animate page elements when scrolling.
 
-## 💻 Project -->
+## 💻 Project
 
 <p>
   DoctorCare é uma página institucional no formato One Page, responsiva, para
